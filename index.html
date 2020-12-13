@@ -25,6 +25,9 @@
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
   </head>
   <body>
+<!-- Button to Top -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top of Page</button>
+
     <section class="s1">
       <div class="main-container">
         <div class="greeting-wrapper">
@@ -33,17 +36,14 @@
 
         <div class="intro-wrapper">
           <div class="nav-wrapper">
-            <div class="dots-wrapper">
-              <div id="dot-1" class="browser-dot"></div>
-              <div id="dot-2" class="browser-dot"></div>
-              <div id="dot-3" class="browser-dot"></div>
-            </div>
             <ul id="navigation">
+              <li><a data-scroll href="#aboutMe">About |</a></li>
+              <li><a data-scroll href="#pastProjects">Projects |</a></li>
               <li><a data-scroll href="#contactMe">Contact</a></li>
             </ul>
           </div>
           <div class="left-column">
-            <img id="profile_pic" src="img/Logo.jpg" alt="Logo Image" />
+            <img id="logo_pic" src="img/Logo.jpg" alt="Logo Image" />
             <h5 style="text-align: center; line-height: 0">
               Personalize Theme
             </h5>
@@ -65,9 +65,7 @@
                 <div id="corner-tl" class="corner"></div>
                 <h3>What I Do</h3>
                 <p>
-                  I was a workover rig operator in a past life, now I'm
-                  constructing my future and following my true passion...
-                  <strong>Programming!</strong>
+                  I'm a full-stack developer with high interest in further expanding my knowledge every day.
                 </p>
                 <div id="corner-br" class="corner"></div>
                 <div id="corner-bl" class="corner"></div>
@@ -80,18 +78,18 @@
 
     <section class="s2">
       <div class="main-container">
-      <div class="about-wrapper">
+      <div id="aboutMe" class="about-wrapper">
         <div class="about-me">
           <h4>More about me</h4>
 
           <p>
-            I enjoy building new projects as well as expanding my own knowledge
-            towards new heights.
+            In the past I was a workover rig operator and I'm currently working on 
+            reaching new heights and pursuing my dream of becoming a Senior Full-Stack Developer.
           </p>
 
           <p>
-            I'm constantly searching for new projects that interest me and love
-            taking on new challenges!
+            I love taking on new challenges and working with difficult projects,
+            piecing things together as I go and figuring out solutions to otherwise complicated matters.
           </p>
 
           <hr />
@@ -99,30 +97,33 @@
           <h4>TOP EXPERTISE</h4>
 
           <p>
-            Fullstack Developer with primary focus on Django + Vue.js:
-            <a target="_blank" href="resume.pdf">Download Resume</a>
+            Junior Fullstack Developer with primary focus on Vue.js + Express.js:
           </p>
 
           <div id="skills">
             <ul>
-              <li>Python</li>
-              <li>Django</li>
-              <li>JavaScript</li>
               <li>Vue.js</li>
+              <li>Vuetify</li>
+              <li>JavaScript</li>
+              <li>Python</li>
               <li>HTML/CSS</li>
             </ul>
 
             <ul>
-              <li>AWS</li>
-              <li>Heroku</li>
-              <li>Docker</li>
-              <li>Linux</li>
               <li>Kotlin/Swift</li>
+              <li>Linux</li>
+              <li>Docker</li>
+              <li>Express.js</li>
+              <li>AWS</li>
             </ul>
           </div>
+          <p>Although as previously stated, my past work experience doesn't pertain to code (yet), 
+              here is my current resume:
+              <a target="_blank" href="resume.pdf">Download Resume</a>
+          </p>
         </div>
         <div class="social-links">
-          <img id="social_img" src="img/Standing.jpeg" alt="Photo of me" />
+          <img id="social_img" src="img/profile_pic.jpeg" alt="Photo of me" />
           <!-- Image fix -->
           <h3>Find me on LinkedIn & Twitter!</h3>
 
@@ -140,16 +141,16 @@
     </section>
 
     <section class="s1">
-      <div class="main-container">
+      <div id="pastProjects" class="main-container">
         <h3 style="text-align: center;">Some of my past projects</h3>
 
         <div class="post-wrapper">
           <div>
             <div class="post">
-              <img class="thumbnail" src="img/LogoNoTop.jpg" alt="Logo Image no description">
+              <img class="thumbnail" src="img/LogoNoTop.jpg" alt="Logo Image without description">
               <div class="post-preview">
-                <h6 class="post-title">The start</h6>
-                <p class="post-intro">Learned JavaScript as well as Vue.js with the help of a good friend of mine.</p>
+                <h6 class="post-title">The Start</h6>
+                <p class="post-intro">Learned JavaScript as well as Vue.js with the help of a good friend as well as mutiple courses.</p>
                 <a href="theStart.html">Read More</a>
               </div>            
             </div>  
@@ -157,10 +158,10 @@
 
           <div>
             <div class="post">
-              <img class="thumbnail" src="img/blueShirt.jpg" alt="Funny Picture">
+              <img class="thumbnail" src="img/rig.jpg" alt="Photo of my old rig">
               <div class="post-preview">
-                <h6 class="post-title">Past life</h6>
-                <p class="post-intro">Used to work in the Oil & Gas Industry.</p>
+                <h6 class="post-title">Past Life</h6>
+                <p class="post-intro">I previously worked in the Oil & Gas industry.</p>
                 <a href="pastLife.html">Read More</a>
               </div>            
             </div>  
@@ -168,10 +169,10 @@
 
           <div>
             <div class="post">
-              <img class="thumbnail" src="img/Close.jpeg" alt="Photo of me">
+              <img class="thumbnail" src="img/Family.jpg" alt="Photo of the fam">
               <div class="post-preview">
-                <h6 class="post-title">Change of work</h6>
-                <p class="post-intro">Finally pursuing a career that I actually love.</p>
+                <h6 class="post-title">Changing Careers</h6>
+                <p class="post-intro">Finally pursuing a career that I truly love.</p>
                 <a href="changeOfWork.html">Read More</a>
               </div>            
             </div>
@@ -181,10 +182,10 @@
     </section>
 
     <section class="s2">
-      <div id="contactMe" class="main-container">
-        <h3 style="text-align: center;">Get In Touch!</h3>
-
-        <form id ="contact-form" action="">
+      
+        <div id="contactMe" class="main-container">
+          <h3 style="text-align: center;">Get In Touch!</h3>
+        <form id ="contact-form">
           <label>Name</label>
           <input class="input-field" type="text" name="name">
 
@@ -196,8 +197,6 @@
 
           <label>Message</label>
           <textarea class="input-field" name="message"></textarea>
-
-
 
           <input id="submit-btn" type="submit" value="Send">
         </form>

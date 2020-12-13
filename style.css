@@ -12,6 +12,8 @@
     --previewBg:rgb(251, 249, 243, 0.8);
     --previewShadow:#F0EAD6;
 
+    --logoBlue:#003264;
+    --logoWhite:#fff;
 
     --buttonColor:black;
 }
@@ -24,6 +26,28 @@ html, body{
 
 body *{
     transition: 0.4s;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--logoBlue);
+    color: var(--logoWhite);
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 30px;
+}
+
+#topBtn:hover {
+    border: 2px solid var(--logoBlue);
+    color:var(--logoBlue);
+    background-color: var(--logoWhite);
 }
 
 h1, h2, h3, h4, h5, h6, strong{
@@ -39,7 +63,7 @@ p, li, span, label, input, textarea{
 
 a{
     text-decoration: none;
-    color: #17a2b8;
+    color: #17A2B8;
 }
 
 ul{
@@ -100,8 +124,7 @@ h6 { font-size: 15px; }
     grid-area: nav-wrapper;
     border-bottom: 1px solid var(--borderColor);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     background-color: var(--mainColor);
 }
 
@@ -120,32 +143,9 @@ h6 { font-size: 15px; }
     margin-left: 5px;
 }
 
-.dots-wrapper{
-    display: flex;
-    padding: 10px;
-}
-
-#dot-1{
-    background-color: #FC6058;
-}
-
-#dot-2{
-    background-color: #FEC02F;
-}
-
-#dot-3{
-    background-color: #2ACA3E;
-}
-
-.browser-dot{
-    background-color: black;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    margin: 5px;
-
-    -webkit-box-shadow: 1px 1px 0px -2px rgba(0,0,0,0.75); 
-    box-shadow: 1px 1px 0px -2px rgba(0,0,0,0.75);
+#navigation a:hover{
+    color: var(--logoBlue);
+    font-size: 25px;
 }
 
 .left-column{
@@ -154,7 +154,7 @@ h6 { font-size: 15px; }
     padding-bottom: 50px;
 }
 
-#profile_pic{
+#logo_pic{
     display: block;
     margin: 0 auto;
 
@@ -162,6 +162,12 @@ h6 { font-size: 15px; }
     width: 200px;
     object-fit: cover;
     border: 2px solid var(--borderColor);
+}
+
+#logo_pic:hover{
+    -ms-transform: scale(3.1);
+    -webkit-transform: scale(3.1);
+    transform: scale(3.1);
 }
 
 
@@ -286,8 +292,20 @@ h6 { font-size: 15px; }
     text-align: center;
 }
 
+.social-links a{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.social-links a:visited{
+    color: #2F4F4F;
+}
+
 #social_img{
-    width: 100%;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
 }
 
 .post-wrapper{
