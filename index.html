@@ -37,8 +37,8 @@
         <div class="intro-wrapper">
           <div class="nav-wrapper">
             <ul id="navigation">
-              <li><a data-scroll href="#aboutMe">About |</a></li>
-              <li><a data-scroll href="#pastProjects">Projects |</a></li>
+              <li><a data-scroll href="#aboutMe">About</a></li>
+              <li><a data-scroll href="#pastProjects">Projects</a></li>
               <li><a data-scroll href="#contactMe">Contact</a></li>
             </ul>
           </div>
@@ -138,11 +138,7 @@
           >
         </div>
       </div>
-    </section>
-
-    <section class="s1">
-      <div id="pastProjects" class="main-container">
-        <h3 style="text-align: center;">Some of my past projects</h3>
+        <h3 style="text-align: center;">My Story</h3>
 
         <div class="post-wrapper">
           <div>
@@ -178,6 +174,45 @@
             </div>
           </div>
         </div>
+    </section>
+
+    <section class="s1">
+      <div id="pastProjects" class="main-container">
+        <h3 style="text-align: center;">Some of my past projects</h3>
+                <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" style="height: 100%; width: 100%; object-fit: contain;" src="img/vue.js.jpeg" alt="Vue.js image">
+              <div class="post-preview">
+                <h6 class="post-title">Vue.js Projects</h6>
+                <p class="post-intro">Vue.js projects I've been building.</p>
+                <!-- <a target="_blank" href="theStart.html">Click Here to see!</a> -->
+              </div>            
+            </div>  
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" style="height: 100%; width: 100%; object-fit: contain;" src="img/python.jpg" alt="Python image">
+              <div class="post-preview">
+                <h6 class="post-title">Python</h6>
+                <p class="post-intro">Python projects I've been tinkering with.</p>
+                <!-- <a target="_blank" href="pastLife.html">Click Here to see!</a> -->
+              </div>            
+            </div>  
+          </div> 
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" style="height: 100%; width: 100%; object-fit: contain;" src="img/github.jpeg" alt="GitHub logo">
+              <div class="post-preview">
+                <h6 class="post-title">Changing Careers</h6>
+                <p class="post-intro">Check out my Git and what I've been working on!</p>
+                <a target="_blank" href="https://github.com/Dozr13">Click Here to see!</a>
+              </div>            
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -185,18 +220,18 @@
       
         <div id="contactMe" class="main-container">
           <h3 style="text-align: center;">Get In Touch!</h3>
-        <form id ="contact-form">
-          <label>Name</label>
-          <input class="input-field" type="text" name="name">
+        <form id ="contact-form" action="https://formspree.io/f/xdopwqzj" method="POST">          <!-- Formspree contact info until backend can be setup -->
+          <label for="name">Name</label>
+          <input class="input-field" type="text" name="name" placeholder="Your Name" required>
 
+          <label for="email">Email</label>
+          <input class="input-field" type="text" name="email" placeholder="Your Email" required>
+          
           <label>Subject</label>
-          <input class="input-field" type="text" name="subject">
-
-          <label>Email</label>
-          <input class="input-field" type="text" name="email">
+          <input class="input-field" type="text" name="subject" placeholder="What's The Subject">
 
           <label>Message</label>
-          <textarea class="input-field" name="message"></textarea>
+          <textarea class="input-field" name="message" placeholder="Input Your Message With Detail"></textarea>
 
           <input id="submit-btn" type="submit" value="Send">
         </form>

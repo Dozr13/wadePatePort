@@ -130,6 +130,7 @@ h6 { font-size: 15px; }
 
 #navigation a{
     color:var(--mainText);
+    text-decoration: underline;
 }
 
 #navigation{

@@ -39,7 +39,6 @@ function setTheme(mode) {
     
 }
 
-//
 var mybutton = document.getElementById("topBtn");
 
 window.onscroll = function () { scrollFunction() };
@@ -55,7 +54,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-//
 
 var scroll = new SmoothScroll('.intro-wrapper a[href*="#"]', {
     speed: 850
