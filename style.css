@@ -214,6 +214,13 @@ h6 { font-size: 15px; }
     background-color: #7e4c74;
 }
 
+#hover-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    opacity: 35%;
+}
+
 #settings-note{
     font-size: 12px;
     font-style: italic;
